@@ -1,3 +1,6 @@
+<?php
+// about.php
+?>
 <!DOCTYPE html>
 <html>
 <head>
