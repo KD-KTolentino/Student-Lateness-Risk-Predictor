@@ -107,7 +107,6 @@ Additional references
 ---
 
 ## Links
-- Repository (public): ``
 - Deployed system: `http://slrp.free.nf`
 - Video presentation (10-min): `https://youtu.be/jfHxKTN6fa4?si=UU6pzYppie6CFy4v`
 - Slides (Canva/PowerPoint): `https://www.canva.com/design/DAG677rleUo/YdTvZf8dnDywMXlgRRLTRw/view?utm_content=DAG677rleUo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hbfc45a35b4`
