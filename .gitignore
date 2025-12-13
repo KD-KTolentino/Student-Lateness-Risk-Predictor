@@ -1,0 +1,15 @@
+# Ignore model artifacts (trained binaries, scaler, reports)
+/model/
+/scripts/
+
+# Ignore PHP-ML cache or runtime artifacts if any
+*.dat
+*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PHPStorm / JetBrains
+.idea/
+
