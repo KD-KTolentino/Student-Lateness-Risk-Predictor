@@ -98,7 +98,7 @@
     <div class="info-section">
       <h2>Technology Stack</h2>
       <ul class="tech-list">
-        <li>PHP 7.4+ for backend logic</li>
+        <li>PHP 8.1 for backend logic</li>
         <li>PHP-ML (Machine Learning library) for KNN classification</li>
         <li>HTML5 &amp; CSS3 for responsive design</li>
         <li>CSV-based data training for model accuracy</li>
