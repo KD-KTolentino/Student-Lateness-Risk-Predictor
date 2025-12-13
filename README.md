@@ -4,6 +4,9 @@ A simple ML-powered web tool (PHP + php-ml) that predicts how likely a student i
 
 ---
 
+## Note
+Composer dependencies (`vendor/`) are excluded following best practices.
+
 ## Important Instructions
 
 1. **How to Run Locally**
