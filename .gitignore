@@ -13,3 +13,7 @@ Thumbs.db
 # PHPStorm / JetBrains
 .idea/
 
+
+# Environment files
+.env
+
