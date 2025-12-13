@@ -162,7 +162,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Save input values for the summary display
         $inputValues = [$sleep, $travel_avg, $wake24, $lateCount, $first_class_decimal, $first_class_hour_12, $first_class_mins, $first_class_ampm];
 
-        // Build improved, prioritized advice that is risk-aware and interaction-aware
+        
 
         // --- Custom lateness risk logic ---
 $buffer_hours = isset($first_class_decimal) && isset($wake24) ? ($first_class_decimal - $wake24) : null;
@@ -354,7 +354,7 @@ if ($prediction === 'High') {
             }
         }
 
-        // Add interactions if any and we have space
+        // Add interactions
         foreach ($interactionAdvice as $ia) {
             if ($count < 5) { $adviceList[] = $ia; $count++; }
         }
@@ -364,7 +364,7 @@ if ($prediction === 'High') {
             $adviceList[] = "Routine looks stable — maintain consistent bed/wake times and a 10–15 minute departure buffer.";
         }
 
-        // Friendly closing line tailored by risk
+        //  closing line tailored by risk
         if ($prediction === 'High') {
             $adviceList[] = '<em>Start with the highest-priority change above this week and re-check your results.</em>';
         } elseif ($prediction === 'Medium') {
@@ -386,7 +386,7 @@ if ($prediction === 'High') {
             $lateCount
         );
         $groqAdvice = get_groq_advice($groqApiKey, $groqPrompt);
-        // Store results in session and redirect
+        // results in session and redirect
         $_SESSION['prediction'] = $prediction;
         $_SESSION['adviceList'] = $adviceList;
         $_SESSION['inputValues'] = $inputValues;
@@ -533,7 +533,7 @@ if (isset($_SESSION['prediction'])) {
     <p class="small">This demonstration does not store your inputs. Results are approximate and intended for personal reflection only.</p>
 </form>
 
-<!-- RESULT (appears after form submission) -->
+<!-- RESULT  -->
 <?php if ($prediction !== null): ?>
     <h3>Prediction Result</h3>
     <div id="result" class="result-box">
@@ -577,7 +577,7 @@ if (preg_match_all('/^\d+\.\s*(.*)$/m', $aiAdvice, $matches)) {
     }
     echo '</ul>';
 } else {
-    // Always show the full Groq advice, even if it's not a list
+    //  show the full Groq advice
     echo '<div style="white-space:pre-line;word-break:break-word;">' . htmlspecialchars($aiAdvice) . '</div>';
 }
 ?>
