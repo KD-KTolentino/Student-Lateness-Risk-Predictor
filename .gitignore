@@ -1,7 +1,7 @@
 # Ignore model artifacts (trained binaries, scaler, reports)
 /model/
 /scripts/
-/vendor/
+
 
 # Ignore PHP-ML cache or runtime artifacts if any
 *.dat
